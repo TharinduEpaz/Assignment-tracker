@@ -42,5 +42,5 @@ function add_assignment($courseID,$description){
     $statement = $db->prepare($query);
     $statement->bindValue(':description',':courseID',$description,$courseID);
     $statement->execute();
-    $statement->closeCursor();
+    $statement->closeCursor();    
 }
