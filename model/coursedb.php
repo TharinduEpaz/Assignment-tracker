@@ -9,7 +9,6 @@ function getcourses(){
     $courses = $statement->fetchAll();
     $statement->closeCursor();
     return $courses;
-
 }
 
 function get_course_name($courseID){
@@ -26,8 +25,6 @@ function get_course_name($courseID){
     $course_name = $course['courseName'];
 
     return $course_name;
-    
-
 }
 
 function delete_course($courseID){
